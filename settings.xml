@@ -1,0 +1,27 @@
+<settings>
+  <servers>
+    <server>
+      <id>deployment</id>
+      <username>deployment</username>
+      <password>k1ckst4rt</password>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <id>usermind-nexus</id>
+      <repositories>
+        <repository>
+          <id>usermind</id>
+          <name>Usermind Nexus</name>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+          <url>http://nexus.internal.usermind.com:8081/nexus/content/groups/public/</url>
+          <layout>default</layout>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>usermind-nexus</activeProfile>
+  </activeProfiles>
+</settings>

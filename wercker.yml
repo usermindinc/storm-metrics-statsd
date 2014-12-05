@@ -12,6 +12,9 @@ build:
     - script:
         name: run maven
         code: |
+          # Cache maven downloads for speedier builds
+          [[ -d $WERCKER_CACHE_DIR/.m2 ]] || mkdir -p $WERCKER_CACHE_DIR/.m2
+          [[ -L ~/.m2 ]] || ln -s $WERCKER_CACHE_DIR/.m2 ~/.m2
           mvn clean package -s settings.xml
 
     - script:

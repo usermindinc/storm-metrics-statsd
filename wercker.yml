@@ -20,7 +20,7 @@ build:
     - script:
         name: nexus upload
         code: |
-          if [ "${WERCKER_GIT_BRANCH}" = 'master' ]; then mvn deploy -s settings.xml; fi
+          if [ "${WERCKER_GIT_BRANCH}" = 'master' ]; then mvn deploy -DskipTests=true -s settings.xml; fi
 
 
 deploy:

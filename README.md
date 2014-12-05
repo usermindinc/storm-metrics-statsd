@@ -22,7 +22,7 @@ Add this as a dependency to your `pom.xml`
     <dependency>
       <groupId>com.endgame</groupId>
       <artifactId>storm-metrics-statsd</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.1-SNAPSHOT</version>
     </dependency>
 
 Configure the `StatsdMetricConsumer` when building your topology.  The example below is

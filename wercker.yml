@@ -19,11 +19,6 @@ build:
         code: |
           if [ "${WERCKER_GIT_BRANCH}" = 'master' ]; then mvn deploy -s settings.xml; fi
 
-    - script:
-        name: run the atf test battery
-        code: |
-            ./wercker-atf.sh
-
 
 deploy:
   after-steps:

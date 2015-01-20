@@ -3,7 +3,7 @@
   <groupId>com.endgame</groupId>
   <artifactId>storm-metrics-statsd</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
   <name>storm-metrics-statsd</name>
   <url>http://maven.apache.org</url>
 
@@ -11,7 +11,7 @@
     <url>http://github.com/usermindinc/storm-metrics-statsd</url>
     <connection>scm:git:git@github.com:usermindinc/storm-metrics-statsd.git</connection>
     <developerConnection>scm:git:git@github.com:usermindinc/storm-metrics-statsd.git</developerConnection>
-    <tag>storm-metrics-statsd-1.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <repositories>

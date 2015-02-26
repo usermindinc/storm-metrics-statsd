@@ -30,12 +30,12 @@ deploy:
         subdomain: usermind
         channel: build
         username: wercker
-        
+
   steps:
-    - script:
-        name: check that deploys are enabled
-        code: |
-          if [ "$(curl http://robbie.internal.usermind.com/hubot/cd/$ENVIRONMENT 2>/dev/null)" != "on" ]; then echo "$ENVIRONMENT deploys are disabled"; exit 1; fi
+    - userminddeployer/cd-gate:
+        endpoint: http://deployments.usermind.com.s3.amazonaws.com/cd
+        environment: $ENVIRONMENT
+        application: storm-metrics-statsd
 
     - userminddeployer/distelli-install
     - script: 
